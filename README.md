@@ -11,13 +11,29 @@ This interactive web application lets users browse museums via list or map view,
   
 ## Script to run locally
 
-In the project directory, you can run:
+Client
+
+1. Navigate to the client folder:
+   
+  ### `cd client`
+
+2. Start the development server:
+   
+  ### `npm run dev`
+
+3. Open your browser at [http://localhost:5173](http://localhost:5173) 
+  The page will automatically reload whenever you make changes.
+
+Server
+
+1. Navigate to the server folder:
+
+  ### `cd client`
+
+2. Start the server in development mode:
 
 ### `npm run dev`
 
-Runs the app in the development mode.\
-Open [http://localhost:3002](http://localhost:3002) to view it in the browser.  
-Swagger documentation is available on [http://localhost:3002/api-docs](http://localhost:3002/api-docs)  
-API status can be seen on [http://localhost:3002/status](http://localhost:3002/status)
+View the Swagger API docs at [http://localhost:3000/api-docs](http://localhost:3000/api-docs)  
 
-Reload page if you make edits.
+The server will restart automatically whenever you update the code.
