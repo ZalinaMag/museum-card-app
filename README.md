@@ -28,7 +28,7 @@ Server
 
 1. Navigate to the server folder:
 
-  ### `cd client`
+  ### `cd server`
 
 2. Start the server in development mode:
 
