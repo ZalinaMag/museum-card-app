@@ -6,8 +6,20 @@ This interactive web application lets users browse museums via list or map view,
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" /> <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" /> <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" /> <img src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" /> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white" />
 
 ## Features
-- Role-based authentication with separate user and admin access levels
-- Order submission form with image upload support (powered by Multer)
+User Features
+- Authentication: Secure login/register as a visitor.
+- Museum Discovery: Browse museums in a searchable list or on an interactive map.
+- Details & Events: View each museum’s description, opening hours, location and upcoming events.
+- Mock Card Purchase: Simulate buying or renewing an electronic museum card through a Stripe sandbox (no real charges).
+- QR-Code Check-In: Scan a museum’s unique QR code to record your visit.
+- Reviews & Ratings: Leave star ratings and written feedback on museums you’ve visited.
+- Favorites: Save and easily revisit your preferred museums.
+
+Administrator Features
+- Admin Login: Secure access with elevated privileges.
+- Museum & Event Management: Add, update or remove museum profiles and schedule news/events.
+- QR-Code Generation: Create unique QR codes for newly added museums.
+- Analytics Dashboard: View visit statistics, top-visited museums and user engagement metrics.
   
 ## Script to run locally
 
