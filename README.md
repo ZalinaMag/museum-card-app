@@ -1,6 +1,7 @@
 # Museum Card App is a capstone study project featuring a React + Redux + TypeScript front end and a Node.js + Express + PostgreSQL back end.
 
 This interactive web application lets users browse museums via list or map view, explore upcoming events, purchase or renew museum memberships (no real charges), check in on-site, submit reviews, and save their favorites.
+![Front page:](./Front_page.png)
 
 ## Stack
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" /> <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" /> <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" /> <img src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" /> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white" />
@@ -42,7 +43,24 @@ Server
 
   ### `cd server`
 
-2. Start the server in development mode:
+2. Create your database
+  Start PostgreSQL (install before if needed and create user too), then create your database (inside psql):
+
+  ### `CREATE DATABASE mydb`
+
+3. Create your local .env
+  In the server folder, create a file named .env with these contents (see for example env_ex file):
+
+  PORT=3000
+  DB=postgres://<YOUR_DB_USER>:<YOUR_DB_PASSWORD>@localhost:5432/mydb
+  SESSION_SECRET=<YOUR_SECRET>
+
+5.Run Sequelize migrations & seeders
+  ### `npm install`
+  ### `npx sequelize db:migrate`npx sequelize db:migrate
+  ### `npx sequelize db:seed:all`npx sequelize db:seed:all
+
+6. Start the server in development mode:
 
 ### `npm run dev`
 
