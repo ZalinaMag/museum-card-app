@@ -55,14 +55,15 @@ Server
   DB=postgres://<YOUR_DB_USER>:<YOUR_DB_PASSWORD>@localhost:5432/mydb
   SESSION_SECRET=<YOUR_SECRET>
 
-5.Run Sequelize migrations & seeders
+4. Run Sequelize migrations & seeders
+   
   ### `npm install`
   ### `npx sequelize db:migrate`npx sequelize db:migrate
   ### `npx sequelize db:seed:all`npx sequelize db:seed:all
 
-6. Start the server in development mode:
+5. Start the server in development mode:
 
-### `npm run dev`
+  ### `npm run dev`
 
 View the Swagger API docs at [http://localhost:3000/api-docs](http://localhost:3000/api-docs)  
 
